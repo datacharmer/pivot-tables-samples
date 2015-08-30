@@ -179,7 +179,7 @@ DROP TABLE IF EXISTS xtab_sales;
 CREATE TABLE xtab_sales (
   person_id int(10) unsigned NOT NULL default '0',
   class_id int(10) unsigned NOT NULL default '0',
-  sale_date date NOT NULL default '0000-00-00',
+  sale_date date NOT NULL,
   customer_id int(10) unsigned NOT NULL default '0',
   sale_amount int(11) NOT NULL default '0',
   PRIMARY KEY  (person_id,class_id,sale_date,customer_id),
