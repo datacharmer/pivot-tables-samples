@@ -11,11 +11,11 @@ $params = {
                . 'INNER JOIN xtab_person USING (loc_id) '
                . 'INNER JOIN xtab_departments USING (dept_id)',
     'cols' => [
-                #{
-                #  'id'     => 'dept_id',
-                #  'from'   => 'xtab_departments',
-                #  'value'  => 'department'
-                #},
+                {
+                  'id'     => 'dept_id',
+                  'from'   => 'xtab_departments',
+                  'value'  => 'department'
+                },
                 {
                   'from'   => 'xtab_person',
                   'id'     => 'gender'

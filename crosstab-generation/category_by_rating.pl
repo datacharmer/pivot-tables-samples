@@ -5,7 +5,8 @@ $params = {
     'col_total' => 1,
     'use_real_names' => 1,
     'op' => [ [ 'avg', 'length' ], ['count', 'FID'] ],
-    'from' =>    'sakila.film_list ',
+    # 'op' => [ [ 'avg', 'length' ] ],
+    'from' =>    'sakila.film_list',
     'rows' => [
                 {
                   'col'     => 'category'
