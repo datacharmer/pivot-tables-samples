@@ -314,11 +314,35 @@ for my $xt (($xtab1, $xtab2, $xtab3)) {
           ['loh','losh','hoh']);
     close STRUCT;
     print "$fname.pl created\n";
-    #print map {"$_\n"} @{ $xt->{header_tree}->draw_ascii_tree};
-    #print map {"$_\n"} @{ $xt->{recs_tree}->draw_ascii_tree};
-    #print YAML::Dump( $xt->{header_tree});
-    #print YAML::Dump($xt->{recs_tree});
-    #print Dumper($xt->{recs_formats});
-    #print Dumper($xt->{header_formats});
+
+    # 
+    # create a sample of auxiliary structures
+    # 
+    open STRUCT, ">$fname.txt" 
+        or die "can't create $fname.txt\n";
+    local $Data::Dumper::Indent=1;
+ 
+    print STRUCT map {"$_\n"} @{ $xt->{header_tree}->draw_ascii_tree};
+    print STRUCT map {"$_\n"} @{ $xt->{recs_tree}->draw_ascii_tree};
+    print STRUCT YAML::Dump( $xt->{header_tree});
+    print STRUCT YAML::Dump($xt->{recs_tree});
+    print STRUCT Dumper($xt->{recs_formats});
+    print STRUCT Dumper($xt->{header_formats});
+    close STRUCT;
+
+    # 
+    # create a sample of configuration file + some intermediate results
+    # 
+    open STRUCT, ">$fname.par" 
+        or die "can't create $fname.par\n";
+    my %config_struct=(
+    );
+    for my $key (qw(from add_real_names rows op xvalues remove_if_null remove_if_zero commify row_total cols))
+    {
+        $config_struct{$key} = $xt->{$key};
+    }
+    print STRUCT Data::Dumper->Dump([\%config_struct],['config_struct']);
+    close STRUCT;
+    print "$fname.par created\n";
 }
 
