@@ -5,7 +5,7 @@ $params = {
     'col_total' => 1,
     'remove_if_zero' => 1,
     'use_real_names' => 1,
-    'op' => [ [ 'count', 'person_id' ] ],
+    'op' => [ [ 'count', 'name' ] ],
     'from' =>    'all_personnel',
     'rows' => [
                 {
