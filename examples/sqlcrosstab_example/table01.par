@@ -1,0 +1,124 @@
+$config_struct = {
+  'xvalues' => [
+    {
+      'label' => 'department',
+      'value' => [
+        {
+          'xcol_alias' => 'pers',
+          'xcol_id' => 1
+        },
+        {
+          'xcol_id' => 2,
+          'xcol_alias' => 'xtab_sales'
+        },
+        {
+          'xcol_alias' => 'dev',
+          'xcol_id' => 3
+        },
+        {
+          'xcol_alias' => 'research',
+          'xcol_id' => 4
+        }
+      ]
+    },
+    {
+      'label' => 'category',
+      'value' => [
+        {
+          'xcol_alias' => 'employee',
+          'xcol_id' => 1
+        },
+        {
+          'xcol_alias' => 'contractor',
+          'xcol_id' => 2
+        },
+        {
+          'xcol_id' => 3,
+          'xcol_alias' => 'consultant'
+        }
+      ]
+    },
+    {
+      'label' => 'gender',
+      'value' => [
+        {
+          'xcol_alias' => 'f',
+          'xcol_id' => 'f'
+        },
+        {
+          'xcol_alias' => 'm',
+          'xcol_id' => 'm'
+        }
+      ]
+    }
+  ],
+  'cols' => [
+    {
+      'id' => 'op',
+      'value' => 'op',
+      'col_list' => [
+        'xcount',
+        'xsum'
+      ]
+    },
+    {
+      'id' => 'dept_id',
+      'from' => 'xtab_departments',
+      'value' => 'department'
+    },
+    {
+      'value' => 'category',
+      'id' => 'cat_id',
+      'from' => 'xtab_categories'
+    },
+    {
+      'from' => 'xtab_person',
+      'id' => 'gender',
+      'col_list' => [
+        {
+          'id' => 'f',
+          'value' => 'f'
+        },
+        {
+          'id' => 'm',
+          'value' => 'm'
+        }
+      ]
+    }
+  ],
+  'op' => [
+    [
+      'COUNT',
+      'person_id'
+    ],
+    [
+      'SUM',
+      'salary'
+    ]
+  ],
+  'commify' => 1,
+  'remove_if_zero' => 1,
+  'remove_if_null' => 1,
+  'rows' => [
+    {
+      'col' => 'CASE WHEN country="Italy" THEN "S" ELSE "N" END',
+      'alias' => 'Area'
+    },
+    {
+      'col' => 'country',
+      'alias' => 'country'
+    },
+    {
+      'col' => 'loc',
+      'alias' => 'location'
+    }
+  ],
+  'row_total' => 1,
+  'add_real_names' => 1,
+  'from' => 'xtab_person 
+            INNER JOIN xtab_locations 
+                ON (xtab_person.loc_id=xtab_locations.loc_id) 
+            INNER JOIN xtab_countries 
+                ON (xtab_countries.country_id=xtab_locations.country_id)
+            '
+};

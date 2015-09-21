@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<xtab title="Sales"
+generator="DBIx::SQLCrosstab::Format version 0.7">
+   <yyyy_mm name="2003-10">
+      <customer name="DataSmart">
+         <country name="UK">
+            <name name="Martin"/>
+               <total/>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software>23,000</software>
+                  <hardware/>
+                  <services/>
+                  <total>23,000</total>
+            </name>
+            <name name="Susan"/>
+               <total>23,000</total>
+         </country>
+            <total>23,000</total>
+      </customer>
+      <customer name="NewHardware">
+         <country name="UK">
+            <name name="Martin"/>
+               <total/>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software/>
+                  <hardware>45,000</hardware>
+                  <services/>
+                  <total>45,000</total>
+            </name>
+            <name name="Susan"/>
+               <total>45,000</total>
+         </country>
+            <total>45,000</total>
+      </customer>
+      <customer name="SmartEdu">
+         <country name="UK">
+            <name name="Martin">
+                  <hardware>50,000</hardware>
+                  <total>50,000</total>
+            </name>
+               <total>50,000</total>
+         </country>
+         <country name="Germany">
+            <name name="Frank"/>
+            <name name="Susan">
+                  <software/>
+                  <services>18,000</services>
+                  <total>18,000</total>
+            </name>
+               <total>18,000</total>
+         </country>
+            <total>68,000</total>
+      </customer>
+      <customer name="total">
+         <country name="UK">
+            <name name="Martin">
+                  <hardware>50,000</hardware>
+                  <total>50,000</total>
+            </name>
+               <total>50,000</total>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software>23,000</software>
+                  <hardware>45,000</hardware>
+                  <services/>
+                  <total>68,000</total>
+            </name>
+            <name name="Susan">
+                  <software/>
+                  <services>18,000</services>
+                  <total>18,000</total>
+            </name>
+               <total>86,000</total>
+         </country>
+            <total>136,000</total>
+      </customer>
+   </yyyy_mm>
+   <yyyy_mm name="2003-11">
+      <customer name="DataSmart">
+         <country name="UK">
+            <name name="Martin"/>
+               <total/>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software/>
+                  <hardware/>
+                  <services>60,000</services>
+                  <total>60,000</total>
+            </name>
+            <name name="Susan"/>
+               <total>60,000</total>
+         </country>
+            <total>60,000</total>
+      </customer>
+      <customer name="ViewData">
+         <country name="UK">
+            <name name="Martin"/>
+               <total/>
+         </country>
+         <country name="Germany">
+            <name name="Frank"/>
+            <name name="Susan">
+                  <software>25,000</software>
+                  <services/>
+                  <total>25,000</total>
+            </name>
+               <total>25,000</total>
+         </country>
+            <total>25,000</total>
+      </customer>
+      <customer name="total">
+         <country name="UK">
+            <name name="Martin"/>
+               <total/>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software/>
+                  <hardware/>
+                  <services>60,000</services>
+                  <total>60,000</total>
+            </name>
+            <name name="Susan">
+                  <software>25,000</software>
+                  <services/>
+                  <total>25,000</total>
+            </name>
+               <total>85,000</total>
+         </country>
+            <total>85,000</total>
+      </customer>
+   </yyyy_mm>
+   <yyyy_mm name="total">
+      <customer name="total">
+         <country name="UK">
+            <name name="Martin">
+                  <hardware>50,000</hardware>
+                  <total>50,000</total>
+            </name>
+               <total>50,000</total>
+         </country>
+         <country name="Germany">
+            <name name="Frank">
+                  <software>23,000</software>
+                  <hardware>45,000</hardware>
+                  <services>60,000</services>
+                  <total>128,000</total>
+            </name>
+            <name name="Susan">
+                  <software>25,000</software>
+                  <services>18,000</services>
+                  <total>43,000</total>
+            </name>
+               <total>171,000</total>
+         </country>
+            <total>221,000</total>
+      </customer>
+   </yyyy_mm>
+</xtab>

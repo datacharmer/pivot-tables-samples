@@ -1,0 +1,9 @@
+"yyyy_mm","customer","UK#Martin#hardware","UK#Martin","UK","Germany#Frank#software","Germany#Frank#hardware","Germany#Frank#services","Germany#Frank","Germany#Susan#software","Germany#Susan#services","Germany#Susan","Germany","total"
+"2003-10","DataSmart",,,,23000,,,23000,,,,23000,23000
+"2003-10","NewHardware",,,,,45000,,45000,,,,45000,45000
+"2003-10","SmartEdu",50000,50000,50000,,,,,,18000,18000,18000,68000
+"2003-10","zzzz",50000,50000,50000,23000,45000,,68000,,18000,18000,86000,136000
+"2003-11","DataSmart",,,,,,60000,60000,,,,60000,60000
+"2003-11","ViewData",,,,,,,,25000,,25000,25000,25000
+"2003-11","zzzz",,,,,,60000,60000,25000,,25000,85000,85000
+"zzzz","zzzz",50000,50000,50000,23000,45000,60000,128000,25000,18000,43000,171000,221000

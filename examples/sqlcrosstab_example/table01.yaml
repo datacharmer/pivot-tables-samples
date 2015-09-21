@@ -1,0 +1,333 @@
+---
+xtab:
+  N:
+    Germany:
+      Berlin:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 1
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 1
+              m: 0
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 0
+            employee:
+              m: 0
+        xsum:
+          dev:
+            employee:
+              m: 6000
+          pers:
+            employee:
+              f: 5500
+      Bonn:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 0
+              m: 0
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 0
+            employee:
+              m: 1
+        xsum:
+          xtab_sales:
+            employee:
+              m: 5000
+      Munich:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 0
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 1
+            contractor:
+              m: 0
+            employee:
+              m: 0
+        xsum:
+          pers:
+            employee:
+              m: 5000
+          xtab_sales:
+            consultant:
+              f: 5500
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 1
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 1
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 1
+            contractor:
+              m: 0
+            employee:
+              m: 1
+        xsum:
+          dev:
+            employee:
+              m: 6000
+          pers:
+            employee:
+              f: 5500
+              m: 5000
+          xtab_sales:
+            consultant:
+              f: 5500
+            employee:
+              m: 5000
+    UK:
+      London:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 1
+            employee:
+              f: 0
+              m: 0
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 1
+            employee:
+              m: 0
+        xsum:
+          pers:
+            contractor:
+              m: 5000
+          xtab_sales:
+            contractor:
+              m: 5500
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 1
+            employee:
+              f: 0
+              m: 0
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 1
+            employee:
+              m: 0
+        xsum:
+          pers:
+            contractor:
+              m: 5000
+          xtab_sales:
+            contractor:
+              m: 5500
+    total:
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 0
+            employee:
+              m: 1
+          pers:
+            contractor:
+              m: 1
+            employee:
+              f: 1
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 1
+            contractor:
+              m: 1
+            employee:
+              m: 1
+        xsum:
+          dev:
+            employee:
+              m: 6000
+          pers:
+            contractor:
+              m: 5000
+            employee:
+              f: 5500
+              m: 5000
+          xtab_sales:
+            consultant:
+              f: 5500
+            contractor:
+              m: 5500
+            employee:
+              m: 5000
+  S:
+    Italy:
+      Rome:
+        xcount:
+          dev:
+            consultant:
+              f: 1
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 0
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 0
+            employee:
+              m: 0
+        xsum:
+          dev:
+            consultant:
+              f: 6000
+          pers:
+            employee:
+              m: 6000
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 1
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 0
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 0
+            employee:
+              m: 0
+        xsum:
+          dev:
+            consultant:
+              f: 6000
+          pers:
+            employee:
+              m: 6000
+    total:
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 1
+            employee:
+              m: 0
+          pers:
+            contractor:
+              m: 0
+            employee:
+              f: 0
+              m: 1
+          xtab_sales:
+            consultant:
+              f: 0
+            contractor:
+              m: 0
+            employee:
+              m: 0
+        xsum:
+          dev:
+            consultant:
+              f: 6000
+          pers:
+            employee:
+              m: 6000
+  total:
+    total:
+      total:
+        xcount:
+          dev:
+            consultant:
+              f: 1
+            employee:
+              m: 1
+          pers:
+            contractor:
+              m: 1
+            employee:
+              f: 1
+              m: 2
+          xtab_sales:
+            consultant:
+              f: 1
+            contractor:
+              m: 1
+            employee:
+              m: 1
+        xsum:
+          dev:
+            consultant:
+              f: 6000
+            employee:
+              m: 6000
+          pers:
+            contractor:
+              m: 5000
+            employee:
+              f: 5500
+              m: 11000
+          xtab_sales:
+            consultant:
+              f: 5500
+            contractor:
+              m: 5500
+            employee:
+              m: 5000

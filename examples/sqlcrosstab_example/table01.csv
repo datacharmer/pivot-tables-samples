@@ -1,0 +1,12 @@
+"Area","country","location","xcount#pers#employee#f","xcount#pers#employee#m","xcount#pers#employee","xcount#pers#contractor#m","xcount#pers#contractor","xcount#pers","xcount#xtab_sales#employee#m","xcount#xtab_sales#employee","xcount#xtab_sales#contractor#m","xcount#xtab_sales#contractor","xcount#xtab_sales#consultant#f","xcount#xtab_sales#consultant","xcount#xtab_sales","xcount#dev#employee#m","xcount#dev#employee","xcount#dev#consultant#f","xcount#dev#consultant","xcount#dev","xcount","xsum#pers#employee#f","xsum#pers#employee#m","xsum#pers#employee","xsum#pers#contractor#m","xsum#pers#contractor","xsum#pers","xsum#xtab_sales#employee#m","xsum#xtab_sales#employee","xsum#xtab_sales#contractor#m","xsum#xtab_sales#contractor","xsum#xtab_sales#consultant#f","xsum#xtab_sales#consultant","xsum#xtab_sales","xsum#dev#employee#m","xsum#dev#employee","xsum#dev#consultant#f","xsum#dev#consultant","xsum#dev","xsum"
+"N","Germany","Berlin",1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,2,5500,,5500,,,5500,,,,,,,,6000,6000,,,6000,11500
+"N","Germany","Bonn",0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,,,,,,,5000,5000,,,,,5000,,,,,,5000
+"N","Germany","Munich",0,1,1,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,2,,5000,5000,,,5000,,,,,5500,5500,5500,,,,,,10500
+"N","Germany","zzzz",1,1,2,0,0,2,1,1,0,0,1,1,2,1,1,0,0,1,5,5500,5000,10500,,,10500,5000,5000,,,5500,5500,10500,6000,6000,,,6000,27000
+"N","UK","London",0,0,0,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,2,,,,5000,5000,5000,,,5500,5500,,,5500,,,,,,10500
+"N","UK","zzzz",0,0,0,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,2,,,,5000,5000,5000,,,5500,5500,,,5500,,,,,,10500
+"N","zzzz","zzzz",1,1,2,1,1,3,1,1,1,1,1,1,3,1,1,0,0,1,7,5500,5000,10500,5000,5000,15500,5000,5000,5500,5500,5500,5500,16000,6000,6000,,,6000,37500
+"S","Italy","Rome",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,2,,6000,6000,,,6000,,,,,,,,,,6000,6000,6000,12000
+"S","Italy","zzzz",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,2,,6000,6000,,,6000,,,,,,,,,,6000,6000,6000,12000
+"S","zzzz","zzzz",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,2,,6000,6000,,,6000,,,,,,,,,,6000,6000,6000,12000
+"zzzz","zzzz","zzzz",1,2,3,1,1,4,1,1,1,1,1,1,3,1,1,1,1,2,9,5500,11000,16500,5000,5000,21500,5000,5000,5500,5500,5500,5500,16000,6000,6000,6000,6000,12000,49500

@@ -1,0 +1,1038 @@
+                                                                                                                                         |                                                                                                                                         
+                                                                                                                                      <xtab>                                                                                                                                       
+  /--------+---------+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------\                                                             
+  |        |         |                                                                   |                                                                                                                           |                                                             
+<Area> <country> <location>                                                          <xcount>                                                                                                                     <xsum>                                                           
+                                             /-----------------------------------------+--------------------------------------+--------------------\                     /-----------------------------------------+--------------------------------------+--------------------\   
+                                             |                                         |                                      |                    |                     |                                         |                                      |                    |   
+                                           <pers>                                <xtab_sales>                               <dev>               <total>                <pers>                                <xtab_sales>                               <dev>               <total>
+                                   /-------------+----------\         /-----------+------------+----------\         /-----------+----------\                   /-------------+----------\         /-----------+------------+----------\         /-----------+----------\           
+                                   |             |          |         |           |            |          |         |           |          |                   |             |          |         |           |            |          |         |           |          |           
+                              <employee>    <contractor> <total> <employee>  <contractor> <consultant> <total> <employee>  <consultant> <total>           <employee>    <contractor> <total> <employee>  <contractor> <consultant> <total> <employee>  <consultant> <total>        
+                             /---+-----\     /-----\              /-----\     /-----\      /-----\              /-----\     /-----\                      /---+-----\     /-----\              /-----\     /-----\      /-----\              /-----\     /-----\                    
+                             |   |     |     |     |              |     |     |     |      |     |              |     |     |     |                      |   |     |     |     |              |     |     |     |      |     |              |     |     |     |                    
+                            <f> <m> <total> <m> <total>          <m> <total> <m> <total>  <f> <total>          <m> <total> <f> <total>                  <f> <m> <total> <m> <total>          <m> <total> <m> <total>  <f> <total>          <m> <total> <f> <total>                 
+                                           |                                            
+                                         <recs>                                         
+                            /---------------------------------------+---------------\   
+                            |                                       |               |   
+                           <N>                                     <S>           <total>
+               /------------------------+------------\          /-----------\       |   
+               |                        |            |          |           |    <total>
+           <Germany>                   <UK>       <total>    <Italy>     <total>    |   
+   /-------+-------+--------\       /--------\       |      /-------\       |    <total>
+   |       |       |        |       |        |    <total>   |       |    <total>        
+<Berlin> <Bonn> <Munich> <total> <London> <total>         <Rome> <total>                
+--- &1 !!perl/hash:Tree::DAG_Node
+attributes:
+  colspan: 41
+daughters:
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: op
+      rowspan: 4
+    daughters: []
+    mother: *1
+    name: Area
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: op
+      rowspan: 4
+    daughters: []
+    mother: *1
+    name: country
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: op
+      rowspan: 4
+    daughters: []
+    mother: *1
+    name: location
+  - &2 !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 19
+      label: op
+    daughters:
+      - &3 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 6
+          label: department
+        daughters:
+          - &4 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 3
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *4
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *4
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *4
+                name: total
+            mother: *3
+            name: employee
+          - &5 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *5
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *5
+                name: total
+            mother: *3
+            name: contractor
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *3
+            name: total
+        mother: *2
+        name: pers
+      - &6 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 7
+          label: department
+        daughters:
+          - &7 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *7
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *7
+                name: total
+            mother: *6
+            name: employee
+          - &8 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *8
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *8
+                name: total
+            mother: *6
+            name: contractor
+          - &9 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *9
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *9
+                name: total
+            mother: *6
+            name: consultant
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *6
+            name: total
+        mother: *2
+        name: xtab_sales
+      - &10 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 5
+          label: department
+        daughters:
+          - &11 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *11
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *11
+                name: total
+            mother: *10
+            name: employee
+          - &12 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *12
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *12
+                name: total
+            mother: *10
+            name: consultant
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *10
+            name: total
+        mother: *2
+        name: dev
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 1
+          label: department
+          rowspan: 3
+        daughters: []
+        mother: *2
+        name: total
+    mother: *1
+    name: xcount
+  - &13 !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 19
+      label: op
+    daughters:
+      - &14 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 6
+          label: department
+        daughters:
+          - &15 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 3
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *15
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *15
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *15
+                name: total
+            mother: *14
+            name: employee
+          - &16 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *16
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *16
+                name: total
+            mother: *14
+            name: contractor
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *14
+            name: total
+        mother: *13
+        name: pers
+      - &17 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 7
+          label: department
+        daughters:
+          - &18 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *18
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *18
+                name: total
+            mother: *17
+            name: employee
+          - &19 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *19
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *19
+                name: total
+            mother: *17
+            name: contractor
+          - &20 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *20
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *20
+                name: total
+            mother: *17
+            name: consultant
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *17
+            name: total
+        mother: *13
+        name: xtab_sales
+      - &21 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 5
+          label: department
+        daughters:
+          - &22 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *22
+                name: m
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *22
+                name: total
+            mother: *21
+            name: employee
+          - &23 !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 2
+              label: category
+            daughters:
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *23
+                name: f
+              - !!perl/hash:Tree::DAG_Node
+                attributes:
+                  colspan: 1
+                  label: gender
+                  rowspan: 1
+                daughters: []
+                mother: *23
+                name: total
+            mother: *21
+            name: consultant
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: category
+              rowspan: 2
+            daughters: []
+            mother: *21
+            name: total
+        mother: *13
+        name: dev
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 1
+          label: department
+          rowspan: 3
+        daughters: []
+        mother: *13
+        name: total
+    mother: *1
+    name: xsum
+mother: ~
+name: xtab
+--- &1 !!perl/hash:Tree::DAG_Node
+attributes:
+  rowspan: 11
+daughters:
+  - &2 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: Area
+      rowspan: 7
+    daughters:
+      - &3 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 4
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: Berlin
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: Bonn
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: Munich
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: total
+        mother: *2
+        name: Germany
+      - &4 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 2
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *4
+            name: London
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *4
+            name: total
+        mother: *2
+        name: UK
+      - &5 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 1
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *5
+            name: total
+        mother: *2
+        name: total
+    mother: *1
+    name: N
+  - &6 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: Area
+      rowspan: 3
+    daughters:
+      - &7 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 2
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *7
+            name: Rome
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *7
+            name: total
+        mother: *6
+        name: Italy
+      - &8 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 1
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *8
+            name: total
+        mother: *6
+        name: total
+    mother: *1
+    name: S
+  - &9 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: Area
+      rowspan: 1
+    daughters:
+      - &10 !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: country
+          rowspan: 1
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              label: location
+              rowspan: 1
+            daughters: []
+            mother: *10
+            name: total
+        mother: *9
+        name: total
+    mother: *1
+    name: total
+mother: ~
+name: recs
+$VAR1 = {
+  '0' => {
+    'N' => [
+      7
+    ],
+    'zzzz' => [
+      1
+    ],
+    'S' => [
+      3
+    ]
+  },
+  '2' => {
+    'Munich' => [
+      1
+    ],
+    'Berlin' => [
+      1
+    ],
+    'Rome' => [
+      1
+    ],
+    'Bonn' => [
+      1
+    ],
+    'zzzz' => [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    'London' => [
+      1
+    ]
+  },
+  '1' => {
+    'Italy' => [
+      2
+    ],
+    'Germany' => [
+      4
+    ],
+    'UK' => [
+      2
+    ],
+    'zzzz' => [
+      1,
+      1,
+      1
+    ]
+  }
+};
+$VAR1 = [
+  [
+    {
+      'rowspan' => 4,
+      'name' => 'Area',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'country',
+      'rowspan' => 4
+    },
+    {
+      'name' => 'location',
+      'rowspan' => 4,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'xcount',
+      'colspan' => 19
+    },
+    {
+      'colspan' => 19,
+      'name' => 'xsum',
+      'rowspan' => 0
+    }
+  ],
+  [
+    {
+      'colspan' => 6,
+      'rowspan' => 0,
+      'name' => 'pers'
+    },
+    {
+      'colspan' => 7,
+      'name' => 'xtab_sales',
+      'rowspan' => 0
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'dev',
+      'colspan' => 5
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 3,
+      'name' => 'total'
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'pers',
+      'colspan' => 6
+    },
+    {
+      'name' => 'xtab_sales',
+      'rowspan' => 0,
+      'colspan' => 7
+    },
+    {
+      'colspan' => 5,
+      'name' => 'dev',
+      'rowspan' => 0
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 3,
+      'colspan' => 1
+    }
+  ],
+  [
+    {
+      'colspan' => 3,
+      'name' => 'employee',
+      'rowspan' => 0
+    },
+    {
+      'name' => 'contractor',
+      'rowspan' => 0,
+      'colspan' => 2
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 2,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'employee',
+      'colspan' => 2
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'contractor',
+      'colspan' => 2
+    },
+    {
+      'name' => 'consultant',
+      'rowspan' => 0,
+      'colspan' => 2
+    },
+    {
+      'rowspan' => 2,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 2,
+      'rowspan' => 0,
+      'name' => 'employee'
+    },
+    {
+      'name' => 'consultant',
+      'rowspan' => 0,
+      'colspan' => 2
+    },
+    {
+      'rowspan' => 2,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 3,
+      'name' => 'employee',
+      'rowspan' => 0
+    },
+    {
+      'colspan' => 2,
+      'name' => 'contractor',
+      'rowspan' => 0
+    },
+    {
+      'colspan' => 1,
+      'name' => 'total',
+      'rowspan' => 2
+    },
+    {
+      'colspan' => 2,
+      'rowspan' => 0,
+      'name' => 'employee'
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'contractor',
+      'colspan' => 2
+    },
+    {
+      'name' => 'consultant',
+      'rowspan' => 0,
+      'colspan' => 2
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 2,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'employee',
+      'colspan' => 2
+    },
+    {
+      'rowspan' => 0,
+      'name' => 'consultant',
+      'colspan' => 2
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 2,
+      'colspan' => 1
+    }
+  ],
+  [
+    {
+      'colspan' => 1,
+      'name' => 'f',
+      'rowspan' => 1
+    },
+    {
+      'name' => 'm',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'm',
+      'rowspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'm',
+      'colspan' => 1
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'm',
+      'rowspan' => 1
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'f',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'total',
+      'rowspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'm',
+      'rowspan' => 1
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'name' => 'f',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'f',
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'm',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'total',
+      'rowspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'm',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'name' => 'total',
+      'rowspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 1,
+      'name' => 'm'
+    },
+    {
+      'colspan' => 1,
+      'name' => 'total',
+      'rowspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 1,
+      'name' => 'm'
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 1,
+      'name' => 'f'
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'm',
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 1,
+      'name' => 'f'
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    }
+  ]
+];

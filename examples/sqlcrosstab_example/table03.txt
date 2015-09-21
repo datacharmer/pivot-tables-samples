@@ -1,0 +1,391 @@
+                                                                  |                                                                   
+                                                                <xtab>                                                                
+    /---------+------------------+----------------------------------------------------+-------------------------------------------\   
+    |         |                  |                                                    |                                           |   
+<yyyy_mm> <customer>            <UK>                                              <Germany>                                    <total>
+                             /-------------\                       /-----------------------------------+------------------\           
+                             |             |                       |                                   |                  |           
+                          <Martin>      <total>                 <Frank>                             <Susan>            <total>        
+                         /---------\                /----------+----------+---------\        /----------+---------\                   
+                         |         |                |          |          |         |        |          |         |                   
+                     <hardware> <total>         <software> <hardware> <services> <total> <software> <services> <total>                
+                                         |                                         
+                                      <recs>                                       
+                     /-------------------------------------+-------------------\   
+                     |                                     |                   |   
+                 <2003-10>                             <2003-11>            <total>
+     /------------+-----------+---------\         /----------+---------\       |   
+     |            |           |         |         |          |         |    <total>
+<DataSmart> <NewHardware> <SmartEdu> <total> <DataSmart> <ViewData> <total>        
+--- &1 !!perl/hash:Tree::DAG_Node
+attributes:
+  colspan: 14
+daughters:
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: country
+      rowspan: 3
+    daughters: []
+    mother: *1
+    name: yyyy_mm
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: country
+      rowspan: 3
+    daughters: []
+    mother: *1
+    name: customer
+  - &2 !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 3
+      label: country
+    daughters:
+      - &3 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 2
+          label: name
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: hardware
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *3
+            name: total
+        mother: *2
+        name: Martin
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 1
+          label: name
+          rowspan: 2
+        daughters: []
+        mother: *2
+        name: total
+    mother: *1
+    name: UK
+  - &4 !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 8
+      label: country
+    daughters:
+      - &5 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 4
+          label: name
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *5
+            name: software
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *5
+            name: hardware
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *5
+            name: services
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *5
+            name: total
+        mother: *4
+        name: Frank
+      - &6 !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 3
+          label: name
+        daughters:
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *6
+            name: software
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *6
+            name: services
+          - !!perl/hash:Tree::DAG_Node
+            attributes:
+              colspan: 1
+              label: class_name
+              rowspan: 1
+            daughters: []
+            mother: *6
+            name: total
+        mother: *4
+        name: Susan
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          colspan: 1
+          label: name
+          rowspan: 2
+        daughters: []
+        mother: *4
+        name: total
+    mother: *1
+    name: Germany
+  - !!perl/hash:Tree::DAG_Node
+    attributes:
+      colspan: 1
+      label: country
+      rowspan: 3
+    daughters: []
+    mother: *1
+    name: total
+mother: ~
+name: xtab
+--- &1 !!perl/hash:Tree::DAG_Node
+attributes:
+  rowspan: 8
+daughters:
+  - &2 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: yyyy_mm
+      rowspan: 4
+    daughters:
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *2
+        name: DataSmart
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *2
+        name: NewHardware
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *2
+        name: SmartEdu
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *2
+        name: total
+    mother: *1
+    name: 2003-10
+  - &3 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: yyyy_mm
+      rowspan: 3
+    daughters:
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *3
+        name: DataSmart
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *3
+        name: ViewData
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *3
+        name: total
+    mother: *1
+    name: 2003-11
+  - &4 !!perl/hash:Tree::DAG_Node
+    attributes:
+      label: yyyy_mm
+      rowspan: 1
+    daughters:
+      - !!perl/hash:Tree::DAG_Node
+        attributes:
+          label: customer
+          rowspan: 1
+        daughters: []
+        mother: *4
+        name: total
+    mother: *1
+    name: total
+mother: ~
+name: recs
+$VAR1 = {
+  '1' => {
+    'SmartEdu' => [
+      1
+    ],
+    'NewHardware' => [
+      1
+    ],
+    'ViewData' => [
+      1
+    ],
+    'zzzz' => [
+      1,
+      1,
+      1
+    ],
+    'DataSmart' => [
+      1,
+      1
+    ]
+  },
+  '0' => {
+    '2003-11' => [
+      3
+    ],
+    'zzzz' => [
+      1
+    ],
+    '2003-10' => [
+      4
+    ]
+  }
+};
+$VAR1 = [
+  [
+    {
+      'colspan' => 1,
+      'rowspan' => 3,
+      'name' => 'yyyy_mm'
+    },
+    {
+      'name' => 'customer',
+      'rowspan' => 3,
+      'colspan' => 1
+    },
+    {
+      'colspan' => 3,
+      'rowspan' => 0,
+      'name' => 'UK'
+    },
+    {
+      'colspan' => 8,
+      'rowspan' => 0,
+      'name' => 'Germany'
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 3,
+      'colspan' => 1
+    }
+  ],
+  [
+    {
+      'rowspan' => 0,
+      'name' => 'Martin',
+      'colspan' => 2
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 2,
+      'colspan' => 1
+    },
+    {
+      'colspan' => 4,
+      'name' => 'Frank',
+      'rowspan' => 0
+    },
+    {
+      'name' => 'Susan',
+      'rowspan' => 0,
+      'colspan' => 3
+    },
+    {
+      'rowspan' => 2,
+      'name' => 'total',
+      'colspan' => 1
+    }
+  ],
+  [
+    {
+      'colspan' => 1,
+      'name' => 'hardware',
+      'rowspan' => 1
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'software',
+      'colspan' => 1
+    },
+    {
+      'name' => 'hardware',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'name' => 'services',
+      'rowspan' => 1,
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'total',
+      'colspan' => 1
+    },
+    {
+      'rowspan' => 1,
+      'name' => 'software',
+      'colspan' => 1
+    },
+    {
+      'colspan' => 1,
+      'rowspan' => 1,
+      'name' => 'services'
+    },
+    {
+      'name' => 'total',
+      'rowspan' => 1,
+      'colspan' => 1
+    }
+  ]
+];

@@ -1,0 +1,127 @@
+$config_struct = {
+  'add_real_names' => undef,
+  'from' => 'xtab_sales 
+                INNER JOIN xtab_customers 
+                    ON (xtab_sales.customer_id=xtab_customers.customer_id) 
+                INNER JOIN xtab_person 
+                    ON (xtab_sales.person_id=xtab_person.person_id)
+                INNER JOIN xtab_class 
+                    ON (xtab_sales.class_id=xtab_class.class_id)
+                INNER JOIN xtab_locations 
+                    ON (xtab_locations.loc_id=xtab_person.loc_id)
+                  ',
+  'row_total' => 1,
+  'rows' => [
+    {
+      'alias' => 'yyyy_mm',
+      'col' => 'substr(sale_date,1,7)'
+    },
+    {
+      'col' => 'customer',
+      'alias' => 'customer'
+    }
+  ],
+  'cols' => [
+    {
+      'from' => 'xtab_countries',
+      'id' => 'country_id',
+      'value' => 'country'
+    },
+    {
+      'value' => 'name',
+      'from' => 'xtab_person',
+      'id' => 'xtab_person.person_id'
+    },
+    {
+      'value' => 'class_name',
+      'id' => 'xtab_class.class_id',
+      'from' => 'xtab_class'
+    }
+  ],
+  'op' => [
+    [
+      'SUM',
+      'sale_amount'
+    ]
+  ],
+  'commify' => 1,
+  'remove_if_null' => 1,
+  'remove_if_zero' => 1,
+  'xvalues' => [
+    {
+      'value' => [
+        {
+          'xcol_alias' => 'UK',
+          'xcol_id' => 1
+        },
+        {
+          'xcol_alias' => 'Germany',
+          'xcol_id' => 2
+        },
+        {
+          'xcol_alias' => 'Italy',
+          'xcol_id' => 3
+        }
+      ],
+      'label' => 'country'
+    },
+    {
+      'label' => 'name',
+      'value' => [
+        {
+          'xcol_id' => 1,
+          'xcol_alias' => 'John'
+        },
+        {
+          'xcol_id' => 2,
+          'xcol_alias' => 'Mario'
+        },
+        {
+          'xcol_id' => 3,
+          'xcol_alias' => 'Frank'
+        },
+        {
+          'xcol_alias' => 'Otto',
+          'xcol_id' => 4
+        },
+        {
+          'xcol_id' => 5,
+          'xcol_alias' => 'Susan'
+        },
+        {
+          'xcol_alias' => 'Martin',
+          'xcol_id' => 6
+        },
+        {
+          'xcol_id' => 7,
+          'xcol_alias' => 'Mary'
+        },
+        {
+          'xcol_alias' => 'Bill',
+          'xcol_id' => 8
+        },
+        {
+          'xcol_id' => 9,
+          'xcol_alias' => 'June'
+        }
+      ]
+    },
+    {
+      'label' => 'class_name',
+      'value' => [
+        {
+          'xcol_id' => 1,
+          'xcol_alias' => 'software'
+        },
+        {
+          'xcol_alias' => 'hardware',
+          'xcol_id' => 2
+        },
+        {
+          'xcol_id' => 3,
+          'xcol_alias' => 'services'
+        }
+      ]
+    }
+  ]
+};

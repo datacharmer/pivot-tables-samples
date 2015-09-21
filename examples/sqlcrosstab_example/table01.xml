@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+<xtab title="personnel by Area/country/location and department/category/gender"
+generator="DBIx::SQLCrosstab::Format version 0.7">
+   <Area name="N">
+      <country name="Germany">
+         <location name="Berlin">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>1</f>
+                        <m>0</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f>5,500</f>
+                        <m/>
+                        <total>5,500</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>5,500</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="consultant"/>
+                     <total>6,000</total>
+               </department>
+                  <total>11,500</total>
+            </op>
+         </location>
+         <location name="Bonn">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+                  <total>1</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                     <total/>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                  <category name="contractor"/>
+                  <category name="consultant"/>
+                     <total>5,000</total>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+                  <total>5,000</total>
+            </op>
+         </location>
+         <location name="Munich">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f/>
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>5,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                  <category name="consultant">
+                        <f>5,500</f>
+                        <total>5,500</total>
+                  </category>
+                     <total>5,500</total>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+                  <total>10,500</total>
+            </op>
+         </location>
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>1</f>
+                        <m>1</m>
+                        <total>2</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>2</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>2</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>5</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f>5,500</f>
+                        <m>5,000</m>
+                        <total>10,500</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>10,500</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                  <category name="contractor"/>
+                  <category name="consultant">
+                        <f>5,500</f>
+                        <total>5,500</total>
+                  </category>
+                     <total>10,500</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="consultant"/>
+                     <total>6,000</total>
+               </department>
+                  <total>27,000</total>
+            </op>
+         </location>
+      </country>
+      <country name="UK">
+         <location name="London">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee"/>
+                  <category name="contractor">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                     <total>5,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor">
+                        <m>5,500</m>
+                        <total>5,500</total>
+                  </category>
+                  <category name="consultant"/>
+                     <total>5,500</total>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+                  <total>10,500</total>
+            </op>
+         </location>
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee"/>
+                  <category name="contractor">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                     <total>5,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor">
+                        <m>5,500</m>
+                        <total>5,500</total>
+                  </category>
+                  <category name="consultant"/>
+                     <total>5,500</total>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+                  <total>10,500</total>
+            </op>
+         </location>
+      </country>
+      <country name="total">
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>1</f>
+                        <m>1</m>
+                        <total>2</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                     <total>3</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>3</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>7</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f>5,500</f>
+                        <m>5,000</m>
+                        <total>10,500</total>
+                  </category>
+                  <category name="contractor">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                     <total>15,500</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                  <category name="contractor">
+                        <m>5,500</m>
+                        <total>5,500</total>
+                  </category>
+                  <category name="consultant">
+                        <f>5,500</f>
+                        <total>5,500</total>
+                  </category>
+                     <total>16,000</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="consultant"/>
+                     <total>6,000</total>
+               </department>
+                  <total>37,500</total>
+            </op>
+         </location>
+      </country>
+   </Area>
+   <Area name="S">
+      <country name="Italy">
+         <location name="Rome">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f/>
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>6,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant">
+                        <f>6,000</f>
+                        <total>6,000</total>
+                  </category>
+                     <total>6,000</total>
+               </department>
+                  <total>12,000</total>
+            </op>
+         </location>
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f/>
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>6,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant">
+                        <f>6,000</f>
+                        <total>6,000</total>
+                  </category>
+                     <total>6,000</total>
+               </department>
+                  <total>12,000</total>
+            </op>
+         </location>
+      </country>
+      <country name="total">
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>0</f>
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                     <total>1</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="contractor">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>0</f>
+                        <total>0</total>
+                  </category>
+                     <total>0</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>0</m>
+                        <total>0</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>1</total>
+               </department>
+                  <total>2</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f/>
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="contractor"/>
+                     <total>6,000</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee"/>
+                  <category name="contractor"/>
+                  <category name="consultant"/>
+                     <total/>
+               </department>
+               <department name="dev">
+                  <category name="employee"/>
+                  <category name="consultant">
+                        <f>6,000</f>
+                        <total>6,000</total>
+                  </category>
+                     <total>6,000</total>
+               </department>
+                  <total>12,000</total>
+            </op>
+         </location>
+      </country>
+   </Area>
+   <Area name="total">
+      <country name="total">
+         <location name="total">
+            <op name="xcount">
+               <department name="pers">
+                  <category name="employee">
+                        <f>1</f>
+                        <m>2</m>
+                        <total>3</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                     <total>4</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="contractor">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>3</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>1</m>
+                        <total>1</total>
+                  </category>
+                  <category name="consultant">
+                        <f>1</f>
+                        <total>1</total>
+                  </category>
+                     <total>2</total>
+               </department>
+                  <total>9</total>
+            </op>
+            <op name="xsum">
+               <department name="pers">
+                  <category name="employee">
+                        <f>5,500</f>
+                        <m>11,000</m>
+                        <total>16,500</total>
+                  </category>
+                  <category name="contractor">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                     <total>21,500</total>
+               </department>
+               <department name="xtab_sales">
+                  <category name="employee">
+                        <m>5,000</m>
+                        <total>5,000</total>
+                  </category>
+                  <category name="contractor">
+                        <m>5,500</m>
+                        <total>5,500</total>
+                  </category>
+                  <category name="consultant">
+                        <f>5,500</f>
+                        <total>5,500</total>
+                  </category>
+                     <total>16,000</total>
+               </department>
+               <department name="dev">
+                  <category name="employee">
+                        <m>6,000</m>
+                        <total>6,000</total>
+                  </category>
+                  <category name="consultant">
+                        <f>6,000</f>
+                        <total>6,000</total>
+                  </category>
+                     <total>12,000</total>
+               </department>
+                  <total>49,500</total>
+            </op>
+         </location>
+      </country>
+   </Area>
+</xtab>

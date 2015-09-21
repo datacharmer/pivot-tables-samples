@@ -1,0 +1,56 @@
+---
+xtab:
+  1992:
+    DataSmart:
+      Germany:
+        Frank:
+          services: 60000
+    ViewData:
+      Germany:
+        Susan:
+          software: 25000
+    total:
+      Germany:
+        Frank:
+          services: 60000
+        Susan:
+          software: 25000
+  1993:
+    DataSmart:
+      Germany:
+        Frank:
+          software: 23000
+    NewHardware:
+      Germany:
+        Frank:
+          hardware: 45000
+    SmartEdu:
+      Germany:
+        Susan:
+          services: 18000
+      UK:
+        Martin:
+          hardware: 50000
+    total:
+      Germany:
+        Frank:
+          hardware: 45000
+          software: 23000
+        Susan:
+          services: 18000
+      UK:
+        Martin:
+          hardware: 50000
+  total:
+    total:
+      Germany:
+        Frank:
+          hardware: 45000
+          services: 60000
+          software: 23000
+        Susan:
+          services: 18000
+          software: 25000
+      UK:
+        Martin:
+          hardware: 50000
