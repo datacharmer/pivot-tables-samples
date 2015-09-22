@@ -9,7 +9,7 @@ SELECT gender AS gender
 ,count(CASE WHEN dept_name = 'Research' THEN emp_no ELSE NULL END) AS 'Research' 
 ,count(CASE WHEN dept_name = 'Sales' THEN emp_no ELSE NULL END) AS 'Sales' 
 ,count(emp_no) AS total
- FROM employees.dept_emp inner join employees.departments using (dept_no) inner join employees.employees using (emp_no) 
+ FROM employees.current_dept_emp inner join employees.departments using (dept_no) inner join employees.employees using (emp_no) 
  GROUP BY gender
 UNION
  SELECT 'zzzz' AS gender
@@ -23,6 +23,6 @@ UNION
 ,count(CASE WHEN dept_name = 'Research' THEN emp_no ELSE NULL END) AS 'Research' 
 ,count(CASE WHEN dept_name = 'Sales' THEN emp_no ELSE NULL END) AS 'Sales' 
 ,count(emp_no) AS total
- FROM employees.dept_emp inner join employees.departments using (dept_no) inner join employees.employees using (emp_no) 
+ FROM employees.current_dept_emp inner join employees.departments using (dept_no) inner join employees.employees using (emp_no) 
  ORDER BY gender
 
